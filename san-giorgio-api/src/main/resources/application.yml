@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://admin:admin@localhost:27017/desafio
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+queue:
+  total: payments-total-queue
+  partial: payments-partial-queue
+  overpaid: payments-overpaid-queue
